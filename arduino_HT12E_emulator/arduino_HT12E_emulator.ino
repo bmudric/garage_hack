@@ -9,9 +9,11 @@ int dataPin = 10;
 void setup() {
   pinMode(dataPin, OUTPUT);
   digitalWrite(dataPin, LOW);
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
   for (int i = 0; i < 10; i++) {
     preamble();
     // example 5 digit code
@@ -21,6 +23,7 @@ void loop() {
     zero();
     one();
   }
+  digitalWrite(LED_BUILTIN, LOW);
   delay(2000);
 }
 
