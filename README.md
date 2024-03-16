@@ -3,8 +3,8 @@
 Solution for sending a signal via an HFY-FST transmitter module, controlled by an Arduino, to a HT12D decoder.
 
 ### Steps Taken
-1. Detect remote frequency using gqrx
-2. Record remote control signal using rtl_433 (example_original_signal.cu8)
+1. Detect remote frequency using [gqrx](https://github.com/gqrx-sdr/gqrx)
+2. Record remote control signal using [rtl_433](https://github.com/merbanan/rtl_433) (example_original_signal.cu8)
  * Repending on your receiver and reception circumstances, getting clean signals may require a few attempts and some fiddling.
  * rtl_433 can auto-analyze signals so you have a better idea of what you are receiving.
 3. Import original signal .cu8 as raw data to learn / verify your code.
